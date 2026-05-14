@@ -187,14 +187,7 @@ header {
 }
 
 .image-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to left,
-    transparent,
-    rgba(2,8,20,0.9)
-  );
-  border-radius: 30px;
+  display: none;
 }
 
 /* Features */
