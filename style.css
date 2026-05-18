@@ -397,7 +397,20 @@ footer {
   .hero h1 {
     font-size: 52px;
   }
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    text-align: left;
+    gap: 30px;
+}
 
+.hero-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 20px;
+}
   .features,
   .skills-grid,
   .contact-grid {
