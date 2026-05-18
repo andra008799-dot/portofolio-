@@ -174,22 +174,17 @@ header {
     box-shadow: 0 15px 35px rgba(0,255,136,0.2);
 }
 
-.hero-image {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
 .hero-image img {
-  width: 300px;
-  heigth: 400px;
-  max-width: none;
-  border-radius: 30px;
-  object-fit: cover;
-  box-shadow: 0 0 60px rgba(0,255,136,0.15);
+    width: 360px;
+    border-radius: 28px;
+    border: 2px solid rgba(0,255,136,0.25);
+    box-shadow: 0 25px 60px rgba(0,255,136,0.18);
+    object-fit: cover;
+    transition: 0.3s ease;
 }
-
+.hero-image img:hover {
+    transform: translateY(-8px) scale(1.02);
+}
 .image-overlay {
   display: none;
 }
