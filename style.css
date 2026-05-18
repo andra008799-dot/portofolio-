@@ -153,8 +153,7 @@ header {
 
 .hero-buttons {
     display: flex;
-    gap: 16px;
-    margin-bottom: 50px;
+    gap: 12px;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -177,6 +176,7 @@ header {
     border: 1px solid rgba(0,255,136,0.5);
     color: #00ff88;
     background: rgba(255,255,255,0.03);
+    text-decoration: none;
 }
 .btn:hover {
     transform: translateY(-5px);
