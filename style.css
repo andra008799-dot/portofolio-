@@ -100,10 +100,11 @@ header {
 
 /* Hero */
 .hero {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
-    padding: 120px 60px 60px;
+    padding: 120px 60px 100px;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -116,10 +117,12 @@ header {
 .hero-text {
     flex: 1.2;
 }
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.hero-image img {
+    width: 420px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 28px;
+    object-fit: cover;
 }
 .badge {
   display: inline-block;
