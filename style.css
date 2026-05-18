@@ -252,27 +252,30 @@ section {
 
 /* Skills */
 .skills {
-  padding: 80px 60px;
+    padding: 100px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .skills-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
+    margin-top: 40px;
 }
 
 .skill-card {
-    background: rgba(255,255,255,0.04) !important;
+    background: rgba(255,255,255,0.04);
     border: 1px solid rgba(0,255,136,0.08);
-    border-radius: 22px;
+    border-radius: 20px;
     padding: 28px;
     backdrop-filter: blur(20px);
+    transition: 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(0,255,136,0.35);
-    box-shadow: 0 20px 50px rgba(0,255,136,0.08)
+    border-color: rgba(0,255,136,0.3);
 }
 
 .skill-card i {
@@ -292,7 +295,9 @@ section {
 
 /* Experience */
 .experience {
-  padding: 80px 60px;
+    padding: 100px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .timeline {
@@ -302,8 +307,8 @@ section {
 }
 
 .timeline-item {
-  position: relative;
-  margin-bottom: 50px;
+    margin-bottom: 30px;
+    padding-left: 30px;
 }
 
 .timeline-dot {
@@ -342,13 +347,15 @@ section {
 
 /* Contact */
 .contact {
-  padding: 80px 60px;
+    padding: 100px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .contact-card {
@@ -377,7 +384,8 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-/* Mobile */
+@media (max-width: 768px) {
+
 .hero-buttons {
     justify-content: center;
 }
