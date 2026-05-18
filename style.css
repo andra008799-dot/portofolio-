@@ -100,16 +100,18 @@ header {
 
 /* Hero */
 .hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 120px 60px 60px;
-  gap: 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 60px 60px;
 }
 
 .hero-content {
-  flex: 1;
-  z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 .badge {
